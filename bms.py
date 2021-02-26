@@ -21,10 +21,25 @@ import  os
 #     subprocess.Popen(['notify-send', msg])
 #     return
 def send_mail_to_me():
-    sen_email = "********@gmail.com"
-    rec_email = "********@gmail.com"
-    password = "********"
-    msg = "T20 tickets are available"
+    sen_email = "@gmail.com"
+    rec_email = ".in"
+    password = ""
+    msg = """From: From Person <from@hbraghvendra@gmail.com>
+To: To Person <to@hbraghvendra@gmail.com>
+MIME-Version: 1.0
+Content-type: text/html
+Subject: Ticket is available
+
+<b>Ticket is Available for 1ST T20 match between <h3>IND and ENG</h3></b>
+
+<html>
+<body>
+       <p><h1><a href="https://in.bookmyshow.com/explore/sports/">Book here</a></h1></p>
+</body>
+</html>
+
+
+"""
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login(sen_email, password)
