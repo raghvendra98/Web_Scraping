@@ -1,5 +1,11 @@
 # Web_Scraping
 Web scraping using BS4
+
+using BS4 Write a code that for BookMyShow site for Checking Ticket availability 
+ie: If ticket would be available will be available for selling i will get a maessage to my email id that "Tickets are Available"
+(example - if tickets will be available for selling for IND VS ENG for 1st test match i will get auto message to my email ID.)
+
+
 # gettting all link from wesite
 anchors = soup.find_all('a')
 all_link = set()
