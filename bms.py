@@ -6,8 +6,8 @@ import smtplib
 import  os
 
 # def send_mail(msg):
-#     email = os.environ.get("hbraghvendra@gmail.com")
-#     password = os.environ.get("HB@2021#")
+#     email = os.environ.get(")
+#     password = os.environ.get("")
 #     s = smtplib.SMTP('smtp.gmail.com', 587)
 #     s.starttls()
 #     s.login(email, password)
