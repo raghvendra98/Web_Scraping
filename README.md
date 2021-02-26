@@ -43,3 +43,17 @@ for item in navbarSupportedContent.parents:
 print(navbarSupportedContent.next_sibling.next_sibling)
 print(navbarSupportedContent.previous_sibling.previous_sibling)
     
+
+
+# SENDING MESSAGE TO EMAIL ID
+    sen_email = "youremailid@gmail.com"
+    rec_email = "senderemailid@gmail.com"
+    password = "youremailidpassword#"
+    msg = "message you want to send"
+    server = smtplib.SMTP('smtp.gmail.com', 587)//server login
+    server.starttls()
+    server.login(sen_email, password)your acc login to server
+    print("login success") 
+    server.sendmail(sen_email, rec_email, msg)
+    print("email has beeen sent to", rec_email)
+    server.quit()
